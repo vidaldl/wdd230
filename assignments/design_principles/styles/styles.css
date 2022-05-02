@@ -1,0 +1,119 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #0984e3;
+    height: 200px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerContainer {
+    margin-top: 50px;
+    text-align: center;
+    height: 100%;
+}
+
+
+#headerContainer h1, #headerContainer h2 {
+    margin-left: 2em;
+    color: #FFFF;
+}
+
+main {
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+#mainContainer {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2d3436;
+    
+}
+
+
+footer {
+    background-color: #636e72;
+    color: white;
+    height: 80px;
+    text-align: center;
+    padding: 30px;
+}
+
+#lastUpdate{
+    
+}
+
+
+.box {
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #dcdde1;
+
+}
+
+.box-title {
+    text-align: center;
+
+    background-color: #273c75;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.box-title h2 {
+    color: white;
+    margin: 0;
+    height: 100%;
+}
+
+.box-content {
+    padding: 15px;
+}
+
+
+
+.box-content img {
+    width: 100%;
+
+}
+
+
+
+#grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin: 50px;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 1000px)  {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (max-width: 600px)  {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        margin-left: none;
+        margin-right: none;
+        padding: 5px;
+    }
+    
+}
