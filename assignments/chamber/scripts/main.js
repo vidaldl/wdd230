@@ -13,4 +13,9 @@ function openNav() {
 document.getElementById('last-modified').textContent = document.lastModified;
 
 
+if(date.includes("Monday") || date.includes("Tuesday")) {
+  document.getElementById("banner").style.display = 'flex';
+}
+
+
 
