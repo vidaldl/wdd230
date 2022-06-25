@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;400;500&display=swap');
+
+.grid { 
+    display: grid; 
+    grid-gap: 1em; 
+ }
+
+ .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ header div h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: #3c73a8;
+ }
+
+ .cards section{
+    border: 2px solid gray;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #B9B9CC;
+ }
+
+ .cards section h2{
+    font-family: 'Libre Baskerville', serif;
+    color: #3c73a8;
+    font-size: x-large;
+
+ }
+
+ .cards section img{
+    
+    width: 200px;
+    box-shadow: 5px 5px 18px black;
+ }
+
+ /* Medium */
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+
+        grid-gap: 1em; padding: 1em; 
+    }
+ }
+
+ /* Large */
+ @media screen and (min-width: 64em) {
+    .grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-gap: 1em; padding: 1em; 
+    }
+ }
