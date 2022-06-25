@@ -1,6 +1,17 @@
 let date = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
 
 document.getElementById("current-date").innerText = date;
+
+//in case form exists
+if(document.getElementById("get-today") != null) {
+  document.getElementById("get-today").value = date;
+}
+
+function getToday() {
+
+  
+}
+
 function openNav() {
     document.getElementById("nav").style.width = "250px";
   }

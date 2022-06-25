@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <!-- <link rel="stylesheet" href="../../styles/styles.css"> -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <meta name="description" content="Saint Domingue Chamber of commers official website. Saint Domingue small businesses. Saint Domingue how to open a business" />
+    <title>Saint Domingue Chamber | Join</title>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+        </div>
+        <div id="current-date">Sunday, 22 November 2021</div>
+        <div class="flex-row flex-center p-15">
+            <img src="images/logo.webp" alt="Saint Domingue Chamber logo">
+             <h2>Saint Domingue Chamber of Commerce</h2>
+             
+        </div>
+        <div class="links-container">
+            <span class="m-15" id="open-nav" onclick="openNav()">&#9776;</span>
+            <div id="social">
+                
+                <div class="facebook">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.png" alt="Facebook link logo">
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.png" alt="Instagram link logo">
+                    </a>    
+                </div>
+            </div>
+        </div>
+        <nav id="navigation">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="discover.html">Discover</a></div>
+            <div><a href="join.html">Join</a></div>
+            <div><a href="pages/typography.html">Typography</a></div>
+        </nav>
+    </header>
+
+   
+    <div id="nav">
+        <span id="close-nav" onclick="closeNav()">X</span>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="discover.html">Discover</a></div>
+        <div><a href="join.html">Join</a></div>
+        <div><a href="pages/typography.html">Typography</a></div>
+    </div>
+
+
+    <main id="main">
+        <section>
+            <div class="flex-row flex-cols flex-center">
+                <div class="intro">
+                    <h2>Join Us!</h2>
+                    <p class="p-15">Apply for a membership using the form below. A member of the chamber will be in contact with you soon after. Join us and discover how we can serve you and how you can serve the community!</p>
+                </div>
+                <div class="join p-15">
+                    <div class="col-half join-form">
+                        <form method="GET" action="thankyou.html">
+                            <div class="input-group">
+                                <label for="first-name">First Name: <span class="required">*</span></label>
+                                <input  type="text" name="firstName" id="first-name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="last-name">Last Name: <span class="required">*</span></label>
+                                <input type="text" name="lastName" id="last-name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="title">Job title:</label>
+                                <input type="text" name="title" id="title" pattern="^[A-Za-z\- ]{7,}">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="email">Email: <span class="required">*</span></label>
+                                <input type="email" name="email" id="email" placeholder="example@test.com" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="phone">Cell Phone: <span class="required">*</span></label>
+                                <input type="tel" name="phone" id="phone" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="business-name">Business Name: <span class="required">*</span></label>
+                                <input type="text" name="business-name" id="business-name" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="membership-level">Membership Level: <span class="required">*</span></label>
+                                <select name="membership-level" id="membership-level" required>
+                                    <option value="np-membership">1. NP Membership</option>
+                                    <option value="bronze-membership">2. Bronze Membership</option>
+                                    <option value="silver-membership">3. Silver Membership</option>
+                                    <option value="gold-membership">4. Gold Membership</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="business-description">Business Description:</label>
+                                <textarea rows="4" type="text" name="business-description" id="business-description"></textarea>
+                            </div>
+
+                            <input id="get-today" type="hidden" onload="getToday()">
+
+                            <div class="input-group">
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="col-half join-plans">
+                        <h2>Membership Levels Benefits:</h2>
+                        <ol>
+                            <li>NP Membership</li>
+                            <ul>
+                                <li>For non profit organizations and there is no fee</li>
+                            </ul>
+
+                            <li>Bronze Membership</li>
+                            <ul>
+                                <li>15% discount on events</li>
+                                <li>10% discount on advertising</li>
+                                <li>Fee of $50/month</li>
+                            </ul>
+
+                            <li>Silver Membership</li>
+                            <ul>
+                                <li>25% discount on events</li>
+                                <li>15% discount on advertising</li>
+                                <li>Free participation in the trade fair</li>
+                                <li>Fee of $100/month</li>
+                            </ul>
+
+                            <li>Gold Membership</li>
+                            <ul>
+                                <li>50% discount on events</li>
+                                <li>50% discount on advertising</li>
+                                <li>Free participation in the trade fair</li>
+                                <li>5 free featured ads per year</li>
+                                <li>1 free training per quarter</li>
+                                <li>Fee of $250/month</li>
+                            </ul>
+                        </ol>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        
+        <img src="images/logo.webp" alt="Saint Domingue Chamber logo">
+        <h3>Saint Domingue Chamber of Commerce</h3>
+        <p class="footer-info">C. Sánchez 157, Santo Domingo 10210, Dominican Republic <br> vi@outlook.com <br> +(123) 2070-2300</p>
+        <a href="https://maps.google.com">
+            
+            Location</a>
+        
+
+        <div class="hr"></div>
+        <p>&copy; 2022 | Saint Domingue City <br> Leo Vidal <br> WDD230 <br> last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
