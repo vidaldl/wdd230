@@ -97,7 +97,7 @@
 
                             <div class="input-group">
                                 <label for="membership-level">Membership Level: <span class="required">*</span></label>
-                                <select name="membership-level" id="membership-level" required>
+                                <select name="membership-level" id="membership-level">
                                     <option value="np-membership">1. NP Membership</option>
                                     <option value="bronze-membership">2. Bronze Membership</option>
                                     <option value="silver-membership">3. Silver Membership</option>
@@ -107,7 +107,7 @@
 
                             <div class="input-group">
                                 <label for="business-description">Business Description:</label>
-                                <textarea rows="4" type="text" name="business-description" id="business-description"></textarea>
+                                <textarea rows="4" name="business-description" id="business-description"></textarea>
                             </div>
 
                             <input id="get-today" type="hidden" onload="getToday()">
@@ -121,35 +121,38 @@
                     <div class="col-half join-plans">
                         <h2>Membership Levels Benefits:</h2>
                         <ol>
-                            <li>NP Membership</li>
-                            <ul>
-                                <li>For non profit organizations and there is no fee</li>
-                            </ul>
+                            <li>NP Membership
+                                <ul>
+                                    <li>For non profit organizations and there is no fee</li>
+                                </ul>
+                            </li>
+                            <li>Bronze Membership
+                                <ul>
+                                    <li>15% discount on events</li>
+                                    <li>10% discount on advertising</li>
+                                    <li>Fee of $50/month</li>
+                                </ul>
+                            </li>
 
-                            <li>Bronze Membership</li>
-                            <ul>
-                                <li>15% discount on events</li>
-                                <li>10% discount on advertising</li>
-                                <li>Fee of $50/month</li>
-                            </ul>
+                            <li>Silver Membership
+                                <ul>
+                                    <li>25% discount on events</li>
+                                    <li>15% discount on advertising</li>
+                                    <li>Free participation in the trade fair</li>
+                                    <li>Fee of $100/month</li>
+                                </ul>
+                            </li>
 
-                            <li>Silver Membership</li>
-                            <ul>
-                                <li>25% discount on events</li>
-                                <li>15% discount on advertising</li>
-                                <li>Free participation in the trade fair</li>
-                                <li>Fee of $100/month</li>
-                            </ul>
-
-                            <li>Gold Membership</li>
-                            <ul>
-                                <li>50% discount on events</li>
-                                <li>50% discount on advertising</li>
-                                <li>Free participation in the trade fair</li>
-                                <li>5 free featured ads per year</li>
-                                <li>1 free training per quarter</li>
-                                <li>Fee of $250/month</li>
-                            </ul>
+                            <li>Gold Membership
+                                <ul>
+                                    <li>50% discount on events</li>
+                                    <li>50% discount on advertising</li>
+                                    <li>Free participation in the trade fair</li>
+                                    <li>5 free featured ads per year</li>
+                                    <li>1 free training per quarter</li>
+                                    <li>Fee of $250/month</li>
+                                </ul>
+                            </li>
                         </ol>
                         
                     </div>
