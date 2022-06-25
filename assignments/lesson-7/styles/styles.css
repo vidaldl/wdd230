@@ -1,0 +1,199 @@
+
+h1, h2, h3 {
+    color: #36454f;
+
+}
+
+.hr {
+	border-bottom: 1px solid #36454f;
+	width: 100%;
+}
+
+.ease-in {
+	transition: all 1s ease-in-out;
+}
+
+header {
+    background-color: #F8EFBA;
+	height: auto;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+header img {
+    height: 220px;
+	margin-right: 8vw;
+
+}
+header h2 {
+    color: #36454f;
+	margin-left: 8vw;
+}
+
+.flex-row {
+	display: flex;
+	
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-cols {
+	flex-direction: column;
+}
+
+.m-15 {
+	margin: 15px;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.content-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+section {
+	
+	background-color: #fff;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #708080;
+	color: yellow;
+}
+
+.content {
+	color: #182C61;
+}
+
+.content-img {
+	height: 300px;
+}
+
+.color-scheme {
+	height: 200px;
+	width: 200px;
+	color: #182C61;
+	margin: 25px;
+	border: 1px solid black;
+	
+}
+
+.color1 {
+	background-color: #2C3A47;
+}
+
+.color2 {
+	background-color: #F8EFBA;
+}
+
+.color3 {
+	background-color: #fff;
+}
+
+.color4 {
+	background-color: #EAB543;
+}
+
+.white {
+	color: #fff;
+}
+
+.paragraph {
+	font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.heading1 {
+	font-family: 'Great Vibes', Georgia, 'Times New Roman', Times, serif;
+	font-size: 44px;
+}
+
+.heading2 {
+	font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+	font-size: 24px;
+}
+
+/***********************************************/
+/** Media Queries for larger views *************/
+/***********************************************/
+
+@media (min-width: 37.5em) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+
+	header img {
+		height: 220px;
+		margin-right: 0vw;
+	
+	}
+	header h2 {
+		color: #36454f;
+		margin-left: 0vw;
+	}
+
+	
+}
+
+@media (min-width: 48em) {
+	nav a {
+		font-size: 1.3rem;
+	}
+
+	header img {
+		height: 220px;
+		margin-right: 2vw;
+	
+	}
+	header h2 {
+		color: #36454f;
+		margin-left: 2vw;
+	}
+}
