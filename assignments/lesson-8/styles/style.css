@@ -1,0 +1,55 @@
+html {
+    font-family: Ubuntu sans-serif;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 5px solid gray;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    box-shadow: 5px 10px 18px #628CA6;
+  }
+  
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: rgb(235,235,235);
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #E7FFED;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #E7F0ED;
+  }
+  
+  caption {
+    padding: 10px;
+  }
+
+  .table-title {
+    background-color: #7FB9C2;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .table-accent {
+    background-color: #628CA6!important;
+    color: white;
+  }
+
+  .table-footer {
+    background-color: #7FB9C2!important;
+  }
+
+  .italic {
+    font-style: italic;
+  }
