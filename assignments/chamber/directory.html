@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <meta name="description" content="Saint Domingue Chamber of commers official website. Saint Domingue small businesses. Saint Domingue how to open a business" />
-    <title>Saint Domingue Chamber | Discover</title>
+    <title>Saint Domingue Chamber | Directory</title>
 </head>
 <body>
     <header>
@@ -60,49 +60,43 @@
     <main id="main">
         <section>
             <div class="flex-row flex-cols flex-center">
-                <div class="intro">
-                    <h2>Discover Saint Domingue</h2>
-                    <p>The old city of Saint Domingue contains a very rich history and important spots that helped determine the establishment of the first european setelers in the Americas <br>
-                        places like Columbus' Alcazar and the Fort of Mercy are examples of how old and culturally profound our city is.
-                    </p>
-                </div>
-                <div class="text-center gallery">
-                    <h1>Gallery</h1>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-1.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-2.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-3.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-4.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-5.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-6.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-7.jpg" src="images/discover/placeholder.png"  alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-8.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-9.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
-                    <picture>
-                        <img class="discover-img" data-src="images/discover/gallery-10.jpg" src="images/discover/placeholder.png" alt="Colonial zone, Saint Domingue">
-                    </picture>
+                <div class="directory">
+                   <h2>Business Directory</h2>
+                   <div class="directoryToggle flex-row flex-center">
+                        <div id="dir-grid" onclick="showGrid()">
+                            <svg style="color: rgb(54, 69, 79);" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16"> <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" fill="#36454f"></path> </svg>
+                        </div>
+                        <div id="dir-list" onclick="showList()">
+                            <svg style="color: rgb(54, 69, 79);" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" fill="#36454f"></path> </svg>        
+                        </div>
+                   </div>
 
-                    <h3>Last visited: <span id="last-visit">N/A</span></h3>
+                   <div class="directory-grid" id="directory-grid">
+                        <!--Populate grid-->
+                   </div>
+
+                   <div class="directory-list" id="directory-list" style="border: 1px solid black;">
+                        <table id="med-list">  
+                            <tbody id="med-list-body">
+                                <!--Populate md list-->
+                            </tbody>
+                        </table>
+
+                        <table id="sm-list">  
+                            <tbody id="sm-list-body">
+                                <tr>
+                                    <td>
+                                        Idaho Websites
+                                        2115 S Vista Avenue Boise ID 83705
+                                        (208) 342-9386
+                                        <a href="#">https://idahowebsites.com/</a>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                   </div>
                 </div>
-                
-    
                 
             </div>
         </section>
@@ -123,6 +117,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/directory.js"></script>
+
 </body>
 </html>

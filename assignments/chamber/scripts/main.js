@@ -54,7 +54,28 @@ localStorage.setItem("visits-last", today);
 }
 
 
-getLastVisited();
+// getLastVisited();
 
 
 
+// document.getElementById("dir-list").addEventListener("click", showGrid)
+
+function showGrid() {
+  document.getElementById("dir-list").style.backgroundColor = "#fff";
+  document.getElementById("directory-list").style.display ="none";
+
+  document.getElementById("dir-grid").style.backgroundColor = "#CCCCCC";
+  document.getElementById("directory-grid").style.display = "grid";
+}
+
+function showList() {
+  document.getElementById("dir-grid").style.backgroundColor = "#fff";
+  document.getElementById("directory-grid").style.display = "none";
+
+
+  document.getElementById("dir-list").style.backgroundColor = "#CCCCCC";
+  document.getElementById("directory-list").style.display = "block";
+
+
+
+}
