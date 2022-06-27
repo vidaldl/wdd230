@@ -5,15 +5,15 @@
 
 // document.getElementById("wind-chill").innerText = chill + "°C";
 
-const apiURL = "https://api.openweathermap.org/data/3.0/onecall?lat=18.4861&lon=69.9312&units=imperial&exclude=hourly,daily,minutely,alerts&appid=eac45e5be5788c06137dc6edfffeacbc";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5605242&units=imperial&appid=eac45e5be5788c06137dc6edfffeacbc";
 const getWeather = async () => {
     const response = await fetch(apiURL);
     jsObject = await response.json();
     console.log(jsObject);
-    document.getElementById("temp").textContent = jsObject.current.temp + "°F";
-    document.getElementById("status").textContent = jsObject.current.weather[0].description;
-    document.getElementById("status-img").setAttribute("src", `https://openweathermap.org/img/w/${jsObject.current.weather[0].icon}.png`);
-    document.getElementById("wind-speed").textContent = jsObject.current.wind_speed + "km/h";
+    document.getElementById("temp").textContent = jsObject.main.temp + " °F";
+    document.getElementById("status").textContent = jsObject.weather[0].description;
+    document.getElementById("status-img").setAttribute("src", `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`);
+    document.getElementById("wind-speed").textContent = jsObject.wind.speed + " km/h";
 
     if(jsObject.current.temp < 50) {
         
