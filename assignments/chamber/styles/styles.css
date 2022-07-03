@@ -458,6 +458,21 @@ footer p {
 	border-radius: 10px;
 }
 
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form {
+	margin-bottom: 10px;
+	border: 3px solid #36454f;
+	padding: 10px;
+	border-radius: 10px;
+}
+.col-full {
+	width: 100%;
+}
+
 .input-group {
 	display: flex;
 	flex-direction: column;
@@ -811,6 +826,10 @@ table {
 		margin: 10px;
 	}
 
+	.col-full {
+		width: 70%;
+	}
+
 	.join {
 		flex-direction: row;
 		justify-self: center;
@@ -818,6 +837,16 @@ table {
 		padding: 10px;
 	}
 
+	.contact {
+		flex-direction: column;
+		justify-self: center;
+		align-items: center;
+		width: 100%;
+		padding: 10px;
+	}
+	
+
+		
 	.join-plans {
 		padding: 10px;
 	}

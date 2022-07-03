@@ -62,8 +62,9 @@
     <main id="main">
         <section>
             <div class="flex-row flex-cols flex-center">
+                
                 <div class="directory">
-                   <h2>Business Directory</h2>
+                   <h2>Saint Domingue Board of Directors</h2>
                    <div class="directoryToggle flex-row flex-center">
                         <div id="dir-grid" onclick="showGrid()">
                             <svg style="color: rgb(54, 69, 79);" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16"> <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" fill="#36454f"></path> </svg>
@@ -98,6 +99,48 @@
                             </tbody>
                         </table>
                    </div>
+
+                    
+                </div>
+                <div class="m-15">
+                    <h2>Contact Us</h2>
+                    <hr>
+                </div>
+                <div class="contact p-15">
+                    <div class="contact-form col-full">
+                        <form method="GET" action="thankyou.html">
+                            <div class="input-group">
+                                <label for="name">Name: <span class="required">*</span></label>
+                                <input  type="text" name="name" id="name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email: <span class="required">*</span></label>
+                                <input type="email" name="email" id="email" placeholder="example@test.com" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="phone">Cell Phone: </label>
+                                <input type="tel" name="phone" id="phone" >
+                            </div>
+
+                            <div class="input-group">
+                                <label for="business-name">Subject: <span class="required">*</span></label>
+                                <input type="text" name="business-name" id="business-name" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="business-description">Message: <span class="required">*</span></label>
+                                <textarea rows="4" name="business-description" id="business-description" required></textarea>
+                            </div>
+
+                            <input id="get-today" type="hidden" onload="getToday()">
+
+                            <div class="input-group">
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </div>
+                            
+                        </form>
+                    </div>
                 </div>
                 
             </div>
@@ -119,7 +162,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/contact.js"></script>
 
 </body>
 </html>
